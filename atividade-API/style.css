@@ -1,0 +1,147 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header {
+
+  text-align: center;
+  margin-bottom: 24px;
+
+}
+
+main {
+
+  width: 100%;
+  max-width: 900px;
+
+}
+
+.controles {
+
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+}
+
+button, input {
+
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+
+}
+
+button {
+
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+
+}
+
+button:hover:not(:disabled) {
+
+  background-color: #1d4ed8;
+
+}
+
+button:disabled {
+
+  background-color: #94a3b8;
+  cursor: not-allowed;
+
+}
+
+input {
+  flex: 1;
+
+  min-width: 200px;
+  background-color: #fff;
+
+}
+
+input:focus {
+
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+
+}
+
+#mensagem {
+
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #475569;
+
+}
+
+#lista-posts {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+
+}
+
+.cartao {
+
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.cartao span {
+
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #64748b;
+  text-transform: uppercase;
+
+}
+
+.cartao h2 {
+
+  font-size: 1.1rem;
+  margin: 0;
+
+}
+
+.cartao p {
+
+  margin: 0;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.4;
+
+}
